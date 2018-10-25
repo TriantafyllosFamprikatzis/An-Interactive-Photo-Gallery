@@ -1,4 +1,15 @@
-img{
-max-width:100%;
-margin: 0px auto;
+
+@media(min-width:480px){
+    
+.wrapper{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
+
+.flex{
+max-width:150px;
+flex-wrap: wrap;
+}
+}
+

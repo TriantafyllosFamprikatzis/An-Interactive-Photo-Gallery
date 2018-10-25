@@ -6,7 +6,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   background-color: white;
   max-width: 90%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 img {
@@ -14,6 +14,18 @@ img {
   margin: 0px auto;
 }
 
+@media (min-width: 480px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex {
+    max-width: 200px;
+    flex-wrap: wrap;
+  }
+}
 input[type=text] {
   font-size: 15px;
   padding: 5px;
@@ -24,6 +36,15 @@ input[type=text] {
 
 ::placeholder {
   color: #b2b2b2;
+}
+
+.search {
+  text-align: center;
+}
+
+.main {
+  max-width: 100%;
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
