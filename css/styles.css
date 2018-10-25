@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+img {
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+input[type=text] {
+  font-size: 15px;
+  padding: 5px;
+  margin: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 0.3em;
+}
+
+::placeholder {
+  color: #b2b2b2;
+}
+
+/*# sourceMappingURL=styles.css.map */
