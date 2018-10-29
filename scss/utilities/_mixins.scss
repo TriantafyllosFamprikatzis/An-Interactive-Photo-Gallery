@@ -6,6 +6,7 @@ $mar-t:null,
 $wid-m:null,
 $wid:null,
 $fnt:null,
+$fnt-s:null,
 $pad:null,
 $txt:null,
 $clr:null,
@@ -19,6 +20,7 @@ margin-top:$mar-t;
 max-width:$wid-m;
 width:$wid;
 font-weight:$fnt;
+font-size:$fnt-s;
 padding:$pad;
 text-align:$txt;
 color:$clr;
@@ -34,23 +36,26 @@ $disp:flex,
 $dir:null,
 $wrap:null,
 $just:null,
-$align:null){
+$align:null,
+$align-c:null){
 display:$disp;
 flex-direction:$dir;
 flex-wrap:$wrap;
 justify-content:$just;
 align-items:$align;
+align-content:$align-c;
 }
 
+//and (max-width:$brkpoint-md)
 //Media query
-@mixin mq($break){
+@mixin media($break){
  @if $break == "small"{
-  @media (min-width:$brkpoint-sm) and (max-width:$brkpoint-md){
+  @media (min-width:$brkpoint-sm){
   @content;
   }
  }
  @else if $break == "medium"{
-  @media (min-width:$brkpoint-md + 1){
+  @media (min-width:$brkpoint-md){
    @content;
   }
  }

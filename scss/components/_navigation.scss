@@ -1,17 +1,17 @@
-input[type="text"]{
-font-size: 15px;
-padding: 5px;
-margin: 20px;
-border: 2px solid #e5e5e5;
-border-radius: .3em;
+.form{
+@include flex($just: center);
 }
-::placeholder{
-color: #b2b2b2;
+
+input[type="search"]{
+@include styling($fnt-s:15px, $pad: 8px, $mar: 30px, $brd: 2px solid $mercury, $brd-r: .3em);
+cursor: pointer;
 }
-.search{
-text-align: center;
+input[placeholder]{
+@include styling($clr: $silverChalice, $txt: left);
 }
-.main{
-max-width: 100%;
-margin: 0;
+
+@include media(large){
+input[type="search"]{
+ @include styling($pad: 8px 100px 8px 8px);
+ }
 }

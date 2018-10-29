@@ -1,15 +1,26 @@
 
-@media(min-width:480px){
-    
 .wrapper{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+margin: 0 auto;
 }
 
-.flex{
-max-width:150px;
-flex-wrap: wrap;
-}
+.thumb{
+padding: 20px;
 }
 
+//Media Queries
+@include media(small){
+.wrapper{
+@include flex($dir: row, $wrap: wrap, $align-c:center);
+max-width: 280px;
+ }
+}
+@include media(medium){
+.wrapper{
+ max-width: 500px;
+ }
+}
+@include media(large){
+.wrapper{
+ max-width: 720px;
+ }
+}

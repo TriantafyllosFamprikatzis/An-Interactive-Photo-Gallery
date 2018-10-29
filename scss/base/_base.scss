@@ -3,8 +3,7 @@ box-sizing: border-box;
 }
 
 body{
- font-family: 'Ubuntu', sans-serif;
+@include styling($mar: 0 auto, $wid-m: 90%);
+ font-family: $bodyfont;
  background-color: white;
- max-width: 90%;
- margin:0 auto;
 }

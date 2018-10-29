@@ -3,48 +3,62 @@
 }
 
 body {
+  margin: 0 auto;
+  max-width: 90%;
   font-family: "Ubuntu", sans-serif;
   background-color: white;
-  max-width: 90%;
+}
+
+.wrapper {
   margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
-  margin: 0px auto;
+.thumb {
+  padding: 20px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1px) {
   .wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .flex {
-    max-width: 200px;
-    flex-wrap: wrap;
+    align-content: center;
+    max-width: 280px;
   }
 }
-input[type=text] {
+@media (min-width: 480px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}
+@media (min-width: 970px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=search] {
+  margin: 30px;
   font-size: 15px;
-  padding: 5px;
-  margin: 20px;
+  padding: 8px;
   border: 2px solid #e5e5e5;
   border-radius: 0.3em;
+  cursor: pointer;
 }
 
-::placeholder {
+input[placeholder] {
+  text-align: left;
   color: #b2b2b2;
 }
 
-.search {
-  text-align: center;
-}
-
-.main {
-  max-width: 100%;
-  margin: 0;
+@media (min-width: 970px) {
+  input[type=search] {
+    padding: 8px 100px 8px 8px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
