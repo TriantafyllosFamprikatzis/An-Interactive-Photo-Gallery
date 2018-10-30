@@ -1,9 +1,9 @@
 *{
 box-sizing: border-box;
+font-family: $bodyfont;
+background-color: white;
 }
 
 body{
-@include styling($mar: 0 auto, $wid-m: 90%);
- font-family: $bodyfont;
- background-color: white;
+@include styling($mar: 0 auto);
 }

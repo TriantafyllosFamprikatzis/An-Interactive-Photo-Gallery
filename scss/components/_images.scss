@@ -7,20 +7,23 @@ margin: 0 auto;
 padding: 20px;
 }
 
+
 //Media Queries
-@include media(small){
-.wrapper{
-@include flex($dir: row, $wrap: wrap, $align-c:center);
-max-width: 280px;
- }
-}
-@include media(medium){
-.wrapper{
- max-width: 500px;
- }
-}
-@include media(large){
-.wrapper{
- max-width: 720px;
- }
-}
+ @include media(small){
+    .wrapper{
+    @include flex($dir: row, $wrap: wrap, $align-c:center);
+    max-width: 240px;
+     }
+    }
+
+ @include media(medium){
+    .wrapper{
+     max-width: 480px;
+     }
+    }
+
+ @include media(large){
+    .wrapper{
+     max-width: 720px;
+     }
+    }

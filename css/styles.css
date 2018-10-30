@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
 }
 
 body {
   margin: 0 auto;
-  max-width: 90%;
-  font-family: "Ubuntu", sans-serif;
-  background-color: white;
 }
 
 .wrapper {
@@ -17,25 +16,69 @@ body {
   padding: 20px;
 }
 
-@media (min-width: 1px) {
+@media (min-width: 1px) and (max-width: 499px) {
   .wrapper {
+    max-width: 240px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    max-width: 280px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 500px) {
   .wrapper {
-    max-width: 500px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }
 @media (min-width: 970px) {
   .wrapper {
     max-width: 720px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
   }
 }
+/*@include media(small){
+.wrapper{
+
+ }
+}
+@include media(medium){
+.wrapper{
+ max-width: 500px;
+ @include flex($dir: row, $wrap: wrap, $align-c:center);
+max-width: 280px;
+ }
+}
+@include media(large){
+.wrapper{
+ max-width: 960px;
+ }
+}
+*/
+/*
+//Media Queries
+@include media(small){
+    .wrapper{
+    @include flex($dir: row, $wrap: wrap, $align-c:center);
+    max-width: 240px;
+     }
+    }
+    @include media(medium){
+    .wrapper{
+     max-width: 480px;
+     }
+    }
+    @include media(large){
+    .wrapper{
+     max-width: 720px;
+     }
+    }*/
 .form {
   display: flex;
   justify-content: center;
