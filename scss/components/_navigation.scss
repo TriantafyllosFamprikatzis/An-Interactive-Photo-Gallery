@@ -3,7 +3,7 @@
 }
 
 input[type="search"]{
-@include styling($fnt-s:15px, $pad: 8px, $mar: 30px, $brd: 2px solid $mercury, $brd-r: .3em);
+@include styling($fnt-s:15px, $pad: 8px, $mar: 35px, $brd: 2px solid $mercury, $brd-r: .3em);
 cursor: pointer;
 }
 input[placeholder]{
