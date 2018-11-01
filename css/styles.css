@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
-  background-color: white;
 }
 
 body {
   margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
 }
 
 .wrapper {
@@ -32,7 +32,7 @@ body {
 }
 @media (min-width: 970px) {
   .wrapper {
-    max-width: 720px;
+    max-width: 960px;
   }
 }
 .form {
