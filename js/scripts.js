@@ -1,53 +1,28 @@
-//Lightbox
+//LIGHTBOX
 lightbox.option({
 'fitImagesInVieport':true,
- 'maxHeight': 800,
- 'maxWidth': 1000,
- 'positionFromTop':200,
- 'alwaysShowNavOnTouchDevices':true
+ 'positionFromTop':200
 })
 
 
-//Search bar
-/*
-var input = document.getElementById("image-search")[0];
-
-function userInput() {
-    // Declare variables
-    var filter, a, getInfo, i;
-        filter = input.value.toLowerCase();
-        a = document.getElementsByClassName("javaS");
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < a.length; i++) {
-        getInfo = a[i].getAttribute('data-title');
-        if (getInfo.toLowerCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-        } else {
-            a[i].style.display = "none";
-        }
-    }
-}
-
-input.addEventListener("keyup", userInput);
-*/
-
+//SEARCH BAR
 const input = document.getElementById('image-search');
 
 function myFunction() {
-    // Declare variables
-    let filter, li, a, i;
-    filter = input.value.toUpperCase();
-    li = document.getElementsByClassName('thumb');
+// Declare variables
+    let filter, images, getInfo;
+    filter = input.value.toLowerCase();
+    images = document.getElementsByClassName('thumb');
 
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+// Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < images.length; i++) {
+        getInfo = images[i].getElementsByTagName("a")[0];
+        if (getInfo.innerHTML.toLowerCase().indexOf(filter) > -1) {
+            images[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            images[i].style.display = "none";
         }
     }
 }
+//Call the function by listening the Event when Keyup
 input.addEventListener("keyup", myFunction);

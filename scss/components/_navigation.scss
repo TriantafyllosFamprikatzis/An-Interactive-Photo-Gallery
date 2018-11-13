@@ -6,12 +6,13 @@ input[type="search"]{
 @include styling($fnt-s:15px, $pad: 8px, $mar: 35px, $brd: 2px solid $mercury, $brd-r: .3em);
 cursor: pointer;
 }
+
 input[placeholder]{
 @include styling($clr: $silverChalice, $txt: left);
 }
 
 @include media(large){
 input[type="search"]{
- @include styling($pad: 8px 100px 8px 8px);
+ @include styling($wid:410px);
  }
 }
