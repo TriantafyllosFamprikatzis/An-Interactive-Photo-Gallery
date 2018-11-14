@@ -6,11 +6,16 @@ margin: 0 auto;
 .thumb{
 padding: 20px;
 }
-
+/*
+.lightbox .lb-image {
+    max-width: 512px;
+    max-height: 512px;
+     }
+*/
 //Media Queries
  @include media(small){
     .wrapper{
-    @include flex($dir: row, $wrap: wrap, $align-c:center);
+    @include flex($dir:row, $wrap:wrap, $align-c:center);
     max-width: 240px;
      }
     }

@@ -1,7 +1,7 @@
 //LIGHTBOX
 lightbox.option({
 'fitImagesInVieport':true,
- 'positionFromTop':200
+ 'disableScrolling':true
 })
 
 
@@ -10,7 +10,7 @@ const input = document.getElementById('image-search');
 
 function myFunction() {
 // Declare variables
-    let filter, images, getInfo;
+    let filter, images, getInfo, i;
     filter = input.value.toLowerCase();
     images = document.getElementsByClassName('thumb');
 

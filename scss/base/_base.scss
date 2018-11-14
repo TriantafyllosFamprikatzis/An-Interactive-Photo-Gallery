@@ -3,11 +3,9 @@ box-sizing: border-box;
 }
 
 body{
-@include styling($mar: 0 auto );
+@include styling($mar:0 auto, $bck-clr:$alabaster);
+@include flex($dir:column);
 font-family: $bodyfont;
-background-color: $alabaster;
-display: flex;
-flex-direction: column;
 min-height: 100vh;
 }
 
@@ -15,21 +13,14 @@ min-height: 100vh;
 border-top: 20px $shuttle-gray solid;
 }
 
-footer{
-margin-top:auto;
-background-color: $shuttle-gray;
-color:white;
-}
-
 p{
- text-align: center;
- margin: 0 auto;
- padding: 8px;
- font-size: 13px;
+@include styling($txt:center, $mar:0 auto, $pad:8px, $fnt-s:12px);
+}
+   
+h1{
+@include styling($mar-t:50px, $txt:center, $fnt-s:25px);
 }
 
-h1{
-margin-top:50px;
-text-align: center;
-font-size: 25px;
+footer{
+@include styling($mar-t:auto, $bck-clr:$shuttle-gray, $clr:white);
 }

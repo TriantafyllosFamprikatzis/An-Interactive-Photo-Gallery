@@ -1,14 +1,14 @@
 .form{
-@include flex($just: center);
+@include flex($just:center);
 }
 
 input[type="search"]{
-@include styling($fnt-s:15px, $pad: 8px, $mar: 35px, $brd: 2px solid $mercury, $brd-r: .3em);
+@include styling($fnt-s:15px, $pad:8px, $mar:35px, $brd:2px solid $mercury, $brd-r:.3em);
 cursor: pointer;
 }
 
 input[placeholder]{
-@include styling($clr: $silverChalice, $txt: left);
+@include styling($clr:$silverChalice, $txt:left);
 }
 
 @include media(large){

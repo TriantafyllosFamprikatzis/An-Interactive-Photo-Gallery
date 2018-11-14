@@ -10,6 +10,7 @@ $fnt-s:null,
 $pad:null,
 $txt:null,
 $clr:null,
+$bck-clr:null,
 $disp:null,
 $brd:null,
 $brd-w:null,
@@ -24,6 +25,7 @@ font-size:$fnt-s;
 padding:$pad;
 text-align:$txt;
 color:$clr;
+background-color:$bck-clr;
 display:$disp;
 border:$brd;
 border-width:$brd-w;
