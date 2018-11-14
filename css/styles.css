@@ -42,12 +42,6 @@ footer {
   padding: 20px;
 }
 
-/*
-.lightbox .lb-image {
-    max-width: 512px;
-    max-height: 512px;
-     }
-*/
 @media (min-width: 1px) {
   .wrapper {
     display: flex;
