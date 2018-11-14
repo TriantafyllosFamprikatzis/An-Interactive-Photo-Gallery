@@ -1,7 +1,8 @@
 //LIGHTBOX
 lightbox.option({
 'fitImagesInVieport':true,
- 'disableScrolling':true
+ 'disableScrolling':true,
+ 'positionFromTop':100
 })
 
 
