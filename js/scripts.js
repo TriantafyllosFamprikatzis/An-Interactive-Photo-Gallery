@@ -5,8 +5,24 @@ lightbox.option({
     'positionFromTop': 100
 })
 
-
 //SEARCH BAR
+// jQuery Method
+// Listen for user input on search bar
+$('#image-search').on('keyup', function () {
+    const $Search = $('#image-search').val().toLowerCase();
+
+    // Loop through images
+    $('.wrapper img').each(function (i, image) {
+        const $caption = $(image).attr('alt').toLowerCase();
+
+        //Show Matches
+        if ($caption.includes($Search)) {
+            $(image).show()
+        } else {
+            $(image).hide()
+        }
+    });
+});
 
 //JavaScript Method
 // const input = document.getElementById('image-search');
@@ -27,22 +43,3 @@ lightbox.option({
 // }
 // //Call the function by listening the Event when Keyup
 // input.addEventListener('keyup', myFunction);
-
-
-// jQuery Method
-// Listen for user input on search bar
-$('#image-search').on('keyup', function () {
-    const $Search = $('#image-search').val().toLowerCase();
-
-    // Loop through image caption
-    $('.wrapper img').each(function (i, image) {
-        const $caption = $(image).attr('alt').toLowerCase();
-
-        //Show Matches
-        if ($caption.includes($Search)) {
-            $(image).show()
-        } else {
-            $(image).hide()
-        }
-    });
-});
