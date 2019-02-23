@@ -1,5 +1,4 @@
 ## An-Interactive-Photo-Gallery
-###### TechDegree-Project-5
  
 This is an interactive photo gallery using jQuery and Plugins.
 
