@@ -7,3 +7,8 @@ jQuery is used to apply a search list that loops through images, depending on us
 A Lightbox Plugin is used when the user clicks on a thumbnail, the photo will display in a lightbox with back and previous arrows to cycle through photos.
 
 Photos and layout adjust for a mobile-friendly experience.
+
+## What I learned
+
+- Developed a **search filter** functionality with **jQuery**.
+- Implement **plugins** such as lightbox.
